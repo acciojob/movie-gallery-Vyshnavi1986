@@ -1,16 +1,75 @@
 <!DOCTYPE html>
 
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Image Gallery</title>
+<style>
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 800px; /* Adjust as needed */
+  }
+  .gallery img {
+    width: calc(100% / 12); /* Adjust for the number of images */
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: auto;
+    margin: 5px;
+  }
+  @media (max-width: 768px) {
+    .gallery img {
+      width: calc(100% / 6); /* Adjust for smaller screens */
+    }
+  }
+  @media (max-width: 480px) {
+    .gallery img {
+      width: calc(100% / 3); /* Adjust for even smaller screens */
+    }
+  }
+  @media (max-width: 320px) {
+    .gallery img {
+      width: 100%; /* For very small screens, images take full width */
+    }
+  }
+</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="gallery">
+  <!-- First row -->
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9umEp3UyNSGiWNLFPnUZqcAiofrxEvNbsAA&s" alt="Image 1">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9umEp3UyNSGiWNLFPnUZqcAiofrxEvNbsAA&s" alt="Image 2">
+  <img src="image3.jpg" alt="Image 3">
+  <img src="image4.jpg" alt="Image 4">
+  <img src="image5.jpg" alt="Image 5">
+  <img src="image6.jpg" alt="Image 6">
+  <img src="image7.jpg" alt="Image 7">
+  <img src="image8.jpg" alt="Image 8">
+  <img src="image9.jpg" alt="Image 9">
+  <img src="image10.jpg" alt="Image 10">
+  <img src="image11.jpg" alt="Image 11">
+  <img src="image12.jpg" alt="Image 12">
+  
+  <!-- Second row -->
+  <img src="image13.jpg" alt="Image 13">
+  <img src="image14.jpg" alt="Image 14">
+  <img src="image15.jpg" alt="Image 15">
+  <img src="image16.jpg" alt="Image 16">
+  <img src="image17.jpg" alt="Image 17">
+  <img src="image18.jpg" alt="Image 18">
+  
+  <!-- Third row -->
+  <img src="image19.jpg" alt="Image 19">
+  <img src="image20.jpg" alt="Image 20">
+  <img src="image21.jpg" alt="Image 21">
+  
+  <!-- Fourth row -->
+  <img src="image22.jpg" alt="Image 22">
+</div>
 
 </body>
-
 </html>
